@@ -6,12 +6,15 @@
     .btnHolder{
         @apply flex justify-between text-2xl font-bold
     }
+    .bggradient{
+        @apply bg-[linear-gradient(to_right,#DEDEDE_0%,#CACACA_51%,#D2D2D2_100%)]
+    }
 }
-@layer utilities{
-    .bg-gradient{
+/* @layer utilities{ */
+    /* .bg-gradient{
         background: linear-gradient(to right,#DEDEDE 0%,#CACACA 51%,#D2D2D2 100%);
-    };
+    }; */
     /* .pt{
         padding-top: 40px;
     } */
-}
+/* } */
