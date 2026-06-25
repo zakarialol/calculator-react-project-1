@@ -1,8 +1,5 @@
-import xsquare from "../assets/x-square.png"
-import Cimg from "../assets/C.png"
-import reflect from "../assets/reflect.png"
 import CalcInput from "./input"
-import {evaluate, number} from "mathjs"
+import {evaluate} from "mathjs"
 // import BackSpace from "./backSpace.jsx"
 function Buttons({array,setText,text,setResult}){
         function changeTheSignFunc(){
@@ -44,7 +41,7 @@ function Buttons({array,setText,text,setResult}){
                     break;
                 case "backspace":
                     const letters = text.slice(0,text.length-1)
-                    setText(letters && letters)
+                    setText(letters)
                     break;
                 case "changeSign":
                     changeTheSignFunc()
