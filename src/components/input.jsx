@@ -1,12 +1,14 @@
 
-import { useEffect} from "react";
+// import { useEffect} from "react";
 function CalcInput({type,text,useRef,setText}){
-    const ref = useRef(null)
-    useEffect(()=>{
-        ref.current.focus()
-    },[text])
+    // const ref = useRef(null)
+    // useEffect(()=>{
+    //     ref.current.focus()
+    // },[text])
     return (
-        <input className="text-[0D0D0D] border bg-gradient w-full p-1 outline-none caret-[#FF5454]" type={type} ref={ref} value={text} readOnly name="" id=""/>
+        <div className="text-[0D0D0D] border bg-gradient w-full p-1 outline-none caret-[#FF5454] h-8 bg-white">
+            {text}   
+        </div>
     )
 }
 export default CalcInput;
